@@ -1,5 +1,62 @@
-Hola mundo
-<!--
-HTML: HYPER TEXT MARKUP LENGUAJE
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido | Proyecto Dark</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Un pequeño truco para evitar el flash blanco al cargar en algunos navegadores */
+        html { background-color: #020617; }
+    </style>
+</head>
+<body class="h-full bg-slate-950 text-slate-200 font-sans overflow-x-hidden">
 
--->
+    <main class="min-h-screen flex items-center justify-center p-6 relative">
+
+        <div class="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 w-96 h-96 bg-purple-700/30 rounded-full blur-[128px] pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 translate-x-1/3 translate-y-1/3 w-[30rem] h-[30rem] bg-blue-700/20 rounded-full blur-[128px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-3xl mx-auto text-center backdrop-blur-md bg-slate-900/60 p-10 md:p-16 rounded-3xl border border-slate-800/50 shadow-2xl shadow-black/50">
+
+            <div class="flex justify-center mb-8">
+                <div class="p-3 bg-slate-800/80 rounded-2xl ring-1 ring-slate-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-blue-400">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-5.332-2.433 4.875 4.875 0 0 0-6.916-3.231 4.5 4.5 0 0 0-1.484 8.421 4.5 4.5 0 0 0-4.5 4.5Zm6-13.5V6m0 0 2.25-2.25M8.25 6l-2.25-2.25M15.75 9a3 3 0 1 1 0 5.25" />
+                    </svg>
+                </div>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
+                Bienvenido al
+                <span class="bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 bg-clip-text text-transparent">
+                    Futuro Digital
+                </span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Has llegado al lugar correcto. Esta es una plataforma segura, rápida y diseñada para potenciar tus ideas. Explora todo lo que hemos preparado para ti.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="group relative inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full overflow-hidden shadow-lg hover:shadow-blue-500/40 transition-all duration-300 hover:scale-105">
+                    <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-20 transition-opacity"></span>
+                    Empezar Ahora
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 ml-2 -mr-1 group-hover:translate-x-1 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                </a>
+
+                <a href="#" class="inline-flex items-center justify-center px-8 py-3.5 text-lg font-semibold text-slate-300 bg-slate-800/50 border border-slate-700 rounded-full hover:bg-slate-800 hover:text-white hover:border-slate-600 transition-all duration-300">
+                    Saber más
+                </a>
+            </div>
+        </div>
+
+        <footer class="absolute bottom-4 text-center text-slate-500 text-sm">
+            © 2024 Tu Proyecto. Todos los derechos reservados.
+        </footer>
+
+    </main>
+</body>
+</html>
